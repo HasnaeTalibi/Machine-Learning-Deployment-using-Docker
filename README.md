@@ -24,16 +24,27 @@ we will build a Flask app along with Flasgger (to handle the UI part of the app 
 ## 4. Build a custom Docker image for the app 
 Now it is time to tacke docker,
 - We start with providing the base image first to the Docker server that needs to be pulled from Docker Hub (if not present locally already)
+   
    **FROM continuumio/anaconda3:4.4.0**
+
 - In the next step, we copy all the files and content from the local directory (where we build our ML model and Flask app) to the Docker directory (we can create a new or current Docker directory as well). In this case, we create a new directory called usr/ML/app.
+  
   **COPY . /usr/ML/app**
+
 - The next command is to expose port 5000 of Docker to run this application. Basically, when the request comes from the user, the host system will route this request to port 5000 of Docker where the app will be running. We will also have to do explicit port mapping between the host system and the Docker container while running the container to route the requests properly and access the predictions.
+  
   **EXPOSE 5000**
+
 - The next command is to change Docker’s current working directory to the directory where we have copied all the files from the local system
-   **WORKDIR /usr/ML/app**
+  
+  **WORKDIR /usr/ML/app**
+
 - The next step is to install all the dependencies and required libraries in order to run the app successfully. We have a requirement.txt file that contains the required libraries along with versions
+   
    **RUN pip install -r requirements.txt**
+
 - The last command in the Dockerfile is always the startup command, and in this case, we want Docker to run the Flask app that we built in the previous step.
+  
   **CMD python flask_api.py**
  
  
