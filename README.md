@@ -53,15 +53,20 @@ This list of commands completes our Dockerfile, and it’s now ready to be conve
 ## 5. Run the app using a Docker container
 In this step of the process, we build the Docker custom image from the Dockerfile created in the previous step and run the container.
 We have to go to the terminal in the same directory where all the files are present. In the terminal, we run the docker build command to build the Docker image from Dockerfile.
+  
   **docker build -t ml_app_docker .**
+
 Once all the commands in the Dockerfile get executed and we have the final image built from the Dockerfile, we can initiate the container to run our ML app.
-  **docker container run -p 5000:5000 ml_app_docker**
+ 
+ **docker container run -p 5000:5000 ml_app_docker**
   
 --> _To access the app, we simply have to go to http://127.0.0.1:5000/apidocs to load the Swagger UI page_
 
 ## 6. Stop the container.
 The last step left after running the application is to stop the running container. This can be done using the docker stop or kill command on the running container. We can see the list of running containers using the docker ps command and can select the running container ID to stop it.
+  
   **docker ps**
+  
   **docker kill <Container_ID>**
 
  
