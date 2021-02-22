@@ -1,12 +1,11 @@
 # Machine-Learning-Deployment-using-Docker
 
-To concretize, we will train a binary classifcation 'predict whether the customer bought the product online or not' 
-
 
 ### An Overview of the process executed  :
-provided by the author  in his book
+provided by the author **Pramod Singh** in his book 'Deploy Machine Learning Models to Production'
 
-1. Train the ML model.
+
+1. Train the ML model ( we will train a binary classifcation 'predict whether the customer will buy the product online or not' ).
 2. Save and export the ML model.
 3. Create a Flask app including the UI layer.
 4. Build a custom Docker image for the app.
