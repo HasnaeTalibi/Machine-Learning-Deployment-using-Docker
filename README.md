@@ -3,7 +3,7 @@
 To concretize, we will train a binary classifcation 'predict whether the customer bought the product online or not' 
 
 
-# An Overview of the process executed  :
+### An Overview of the process executed  :
 provided by the author  in his book
 
 1. Train the ML model.
