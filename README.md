@@ -5,7 +5,7 @@
 provided by the author **Pramod Singh** in his book 'Deploy Machine Learning Models to Production'
 
 
-1. Train the ML model ( we will train a binary classifcation 'predict whether the customer will buy the product online or not' ).
+1. Train the ML model ( we will train a binary classification 'predict whether the customer will buy the product online or not' ).
 2. Save and export the ML model.
 3. Create a Flask app including the UI layer.
 4. Build a custom Docker image for the app.
@@ -22,7 +22,7 @@ Once The model is trained, we need to save it using pickle/joblib in order to re
 we will build a Flask app along with Flasgger (to handle the UI part of the app to make it more intuitive to consume the results) to deploy an ML model easily
 
 ## 4. Build a custom Docker image for the app 
-Now it is time to tacke docker,
+Now it is time to tackle docker,
 - We start with providing the base image first to the Docker server that needs to be pulled from Docker Hub (if not present locally already)
    
    **FROM continuumio/anaconda3:4.4.0**
