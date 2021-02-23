@@ -60,7 +60,7 @@ Once all the commands in the Dockerfile get executed and we have the final image
  
  **docker container run -p 5000:5000 ml_app_docker**
   
---> _To access the app, we simply have to go to http://127.0.0.1:5000/apidocs to load the Swagger UI page_
+--> _To access to the app, we simply have to go to http://127.0.0.1:5000/apidocs to load the Swagger UI page_
 
 ## 6. Stop the container.
 The last step left after running the application is to stop the running container. This can be done using the docker stop or kill command on the running container. We can see the list of running containers using the docker ps command and can select the running container ID to stop it.
